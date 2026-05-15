@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>SATA — Семинар 2 (Системы ввода вывода)</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css" id="theme">
+
+  <style>
+    .reveal h1, .reveal h2, .reveal h3 { text-transform: none; }
+    .reveal section img { border: none; box-shadow: none; max-height: 460px; }
+    .reveal table { font-size: 0.75em; }
+    .reveal table th { background: #f0f0f0; }
+    .reveal .small { font-size: 0.7em; }
+    .reveal .smaller { font-size: 0.55em; color: #666; }
+    .reveal .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1em; align-items: center; }
+    .reveal .timeline { font-size: 0.8em; }
+    .reveal .timeline li { margin: 0.3em 0; }
+    .reveal code { background: #f4f4f4; padding: 0.1em 0.3em; border-radius: 3px; }
+    .reveal .accent { color: #c33; font-weight: bold; }
+    .reveal .muted { color: #777; }
+    .reveal section { text-align: left; }
+    .reveal h2 { text-align: center; margin-bottom: 0.5em; }
+    .reveal .title-slide { text-align: center; }
+    .caption { font-size: 0.55em; color: #888; text-align: center; margin-top: 0.3em; }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section data-markdown="presentation.md"
+               data-separator="^\n---\n"
+               data-separator-vertical="^\n--\n"></section>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/markdown/markdown.js"></script>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      controls: true,
+      progress: true,
+      slideNumber: 'c/t',
+      transition: 'slide',
+      width: 1280,
+      height: 800,
+      margin: 0.06,
+      plugins: [ RevealMarkdown ]
+    });
+  </script>
+</body>
+</html>
